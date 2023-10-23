@@ -1,24 +1,16 @@
+import React, { useState } from "react";
 import "./App.css";
-import logo from "./logo.svg";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [current, setCurrent] = useState("Landing");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-gray-900 text-white">
+      <Navbar current={current} setCurrent={setCurrent} />
+      <Hero />
+      {current !== "Landing" ? <Footer /> : null}
     </div>
   );
 }
