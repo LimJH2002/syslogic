@@ -1,15 +1,6 @@
 import React from "react";
 
-// const navigation = [
-//   { name: "Product", href: "#" },
-//   { name: "Features", href: "#" },
-//   { name: "Marketplace", href: "#" },
-//   { name: "Company", href: "#" },
-// ];
-
-export default function Example() {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+export default function Hero() {
   return (
     <div className="bg-gray-900">
       <div className="relative isolate overflow-hidden pt-14">

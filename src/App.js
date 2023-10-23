@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
+  const [current, setCurrent] = useState("Landing");
   return (
-    <div className="App bg-gray-800 text-white">
-      <Navbar />
+    <div className="App bg-gray-900 text-white">
+      <Navbar current={current} setCurrent={setCurrent} />
       <Hero />
+      {current !== "Landing" ? <Footer /> : null}
     </div>
   );
 }
