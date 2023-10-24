@@ -36,7 +36,7 @@ const FeatureSectionRight = ({ items }) => {
           <img
             src={items.image}
             alt="Product screenshot"
-            className="w-[25rem] rounded-xl sm:w-[30rem] ml-10 mt-5"
+            className="w-[25rem] rounded-xl sm:w-[30rem] ml-20 mt-5"
           />
         </div>
       </div>
