@@ -2,9 +2,14 @@ import {
   EnvelopeOpenIcon,
   FireIcon,
   GlobeAltIcon,
+  LockClosedIcon,
   ServerIcon,
+  ServerStackIcon,
   ShieldCheckIcon,
+  WifiIcon,
   WrenchIcon,
+  EllipsisHorizontalCircleIcon,
+  BriefcaseIcon,
 } from "@heroicons/react/20/solid";
 import React from "react";
 import FeatureSectionLeft from "../components/Services/FeatureSectionLeft";
@@ -12,6 +17,8 @@ import FeatureSectionRight from "../components/Services/FeatureSectionRight";
 import Firewall from "../images/services/Firewall.png";
 import ItInfraSupport from "../images/services/IT.png";
 import Virtualization from "../images/services/Virtualization.png";
+import Wifi from "../images/services/Wifi.png";
+import Email from "../images/services/Email.png";
 
 export default function Services() {
   const first = {
@@ -69,57 +76,45 @@ export default function Services() {
     services: [
       {
         name: "Hypervisor-based Virtualization",
-        description:
-          "Hyper-V (by Microsoft), VMWARE (by VMware, Inc.)",
-        icon: WrenchIcon,
+        description: "Hyper-V (by Microsoft), VMWARE (by VMware, Inc.)",
+        icon: ServerStackIcon,
       },
     ],
   };
   const fourth = {
-    title: "Virtualization",
+    title: "WiFi Solutions",
     description:
-      "From diagnosing server and network issues to deploying essential hardware, we maintain and optimize your business's digital backbone.",
-    image: ItInfraSupport,
+      "We offer advanced network management, seamless roaming, and top-tier security protocols. Experience connectivity without compromise.",
+    image: Wifi,
     services: [
       {
-        name: "Diagnostics",
-        description:
-          "PC & Servers, Printers, Switches, Cisco Routers, LAN/WAN/Internet",
-        icon: WrenchIcon,
+        name: "Network Management & Stability",
+        description: "Wifi Controller, Fast Roaming",
+        icon: WifiIcon,
       },
       {
-        name: "Servers",
-        description: ["Server Deployment"],
-        icon: ServerIcon,
-      },
-      {
-        name: "Network Solutions",
-        description: ["Link Balancer, Wireless Access Point"],
-        icon: GlobeAltIcon,
+        name: "Security & Authentication",
+        description: "Radius Authentication, 802.1x",
+        icon: LockClosedIcon,
       },
     ],
   };
   const fifth = {
-    title: "Virtualization",
+    title: "Email Server",
     description:
-      "From diagnosing server and network issues to deploying essential hardware, we maintain and optimize your business's digital backbone.",
-    image: ItInfraSupport,
+      "Elevate your business communication with tailored email solutions. Ensure seamless, secure, and efficient operations, catered to your business. Choose the best, choose reliability.",
+    image: Email,
     services: [
       {
-        name: "Diagnostics",
+        name: "Microsoft Solutions",
         description:
-          "PC & Servers, Printers, Switches, Cisco Routers, LAN/WAN/Internet",
-        icon: WrenchIcon,
+          "Exchange 2010/2013/2016/2019, MS Office 365 (Cloud Computing)",
+        icon: BriefcaseIcon,
       },
       {
-        name: "Servers",
-        description: ["Server Deployment"],
-        icon: ServerIcon,
-      },
-      {
-        name: "Network Solutions",
-        description: ["Link Balancer, Wireless Access Point"],
-        icon: GlobeAltIcon,
+        name: "Alternative Platforms",
+        description: "Lotus Domino, Gsuite",
+        icon: EllipsisHorizontalCircleIcon,
       },
     ],
   };
