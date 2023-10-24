@@ -120,7 +120,7 @@ export default function Services() {
   };
   return (
     <div>
-      <div className="pt-10 bg-white">
+      <div className="pt-20 bg-white">
         <FeatureSectionRight items={first} />
       </div>
       <FeatureSectionLeft items={second} />
