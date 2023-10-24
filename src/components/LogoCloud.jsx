@@ -1,4 +1,9 @@
 import React from "react";
+import Fortinet from "../images/about/fortinet.png";
+import Lenovo from "../images/about/lenovo.png";
+import Microsoft from "../images/about/microsoft.png";
+import Symantec from "../images/about/symantec.png";
+import Ubi from "../images/about/ubi.png";
 
 export default function LogoCloud() {
   return (
@@ -7,12 +12,11 @@ export default function LogoCloud() {
         <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
           <div className="mx-auto w-full max-w-xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Trusted by the most innovative teams
+              The tools we use
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-              egestas tempus tellus etiam sed. Quam a scelerisque amet
-              ullamcorper eu enim et fermentum, augue.
+              A curated selection of essential instruments and software that
+              empower our operations and innovation.
             </p>
             <div className="mt-8 flex justify-center">
               <a
@@ -26,44 +30,37 @@ export default function LogoCloud() {
           <div className="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
             <img
               className="max-h-12 w-full object-contain object-left"
-              src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg"
-              alt="Tuple"
+              src={Fortinet}
+              alt="Fortinet"
               width={105}
               height={48}
             />
             <img
               className="max-h-12 w-full object-contain object-left"
-              src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg"
-              alt="Reform"
+              src={Lenovo}
+              alt="Lenovo"
               width={104}
               height={48}
             />
             <img
               className="max-h-12 w-full object-contain object-left"
-              src="https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg"
-              alt="SavvyCal"
+              src={Microsoft}
+              alt="Microsoft"
               width={140}
               height={48}
             />
             <img
               className="max-h-12 w-full object-contain object-left"
-              src="https://tailwindui.com/img/logos/laravel-logo-gray-900.svg"
-              alt="Laravel"
+              src={Symantec}
+              alt="Symantec"
               width={136}
               height={48}
             />
             <img
               className="max-h-12 w-full object-contain object-left"
-              src="https://tailwindui.com/img/logos/transistor-logo-gray-900.svg"
-              alt="Transistor"
+              src={Ubi}
+              alt="Ubiquity"
               width={158}
-              height={48}
-            />
-            <img
-              className="max-h-12 w-full object-contain object-left"
-              src="https://tailwindui.com/img/logos/statamic-logo-gray-900.svg"
-              alt="Statamic"
-              width={147}
               height={48}
             />
           </div>
