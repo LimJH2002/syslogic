@@ -1,6 +1,5 @@
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import PropTypes from "prop-types";
 import React, { useState } from "react";
 
 const navigation = [
@@ -9,7 +8,7 @@ const navigation = [
   { name: "Contact Us", href: "/contact" },
 ];
 
-export default function Navbar(props) {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -19,10 +18,10 @@ export default function Navbar(props) {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="./" className="-m-1.5 p-1.5 ml-4">
             <span className="sr-only">Syslogic</span>
             <img
-              className="h-8 w-auto"
+              className="h-9 w-auto"
               src="./syslogic-logo.png"
               alt="Syslogic Logo"
             />
@@ -43,7 +42,6 @@ export default function Navbar(props) {
             <a
               key={item.name}
               href={item.href}
-              onClick={() => props.setCurrent(item.name)}
               className="text-sm font-semibold leading-6 text-black"
             >
               {item.name}
@@ -113,7 +111,3 @@ export default function Navbar(props) {
     </header>
   );
 }
-
-Navbar.propTypes = {
-  setCurrent: PropTypes.func.isRequired,
-};
