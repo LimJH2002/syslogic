@@ -9,34 +9,33 @@ const stats = [
 ];
 const values = [
   {
-    name: "Be world-class",
+    name: "Quality Assurance",
     description:
-      "Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.",
+      "Upholding the highest standards in every solution we deliver..",
   },
   {
-    name: "Share everything you know",
+    name: "Efficiency",
     description:
-      "Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.",
+      "Streamlining processes to ensure optimal results with minimal resources.",
   },
   {
-    name: "Always learning",
-    description:
-      "Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.",
+    name: "Dedication",
+    description: "Commitment to the success and satisfaction of our clients.",
   },
   {
-    name: "Be supportive",
+    name: "Integrity",
     description:
-      "Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.",
+      "Building trust through transparency, honesty, and ethical practices.",
   },
   {
-    name: "Take responsibility",
+    name: "Innovation",
     description:
-      "Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.",
+      "Continually embracing and implementing the latest in IT to serve our clients better.",
   },
   {
-    name: "Enjoy downtime",
+    name: "Client-Centric Approach",
     description:
-      "Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.",
+      "Placing our customers at the heart of our operations, ensuring tailored and effective solutions.",
   },
 ];
 
@@ -80,7 +79,7 @@ export default function AboutUs() {
             aria-hidden="true"
           >
             <div
-              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+              className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ffa500] to-[#ff6a00] opacity-30"
               style={{
                 clipPath:
                   "polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)",
@@ -92,15 +91,22 @@ export default function AboutUs() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    We’re changing the way people connect.
+                    Quality, efficiency, and dedication at the heart of our IT
+                    solutions.
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                    quis cupidatat mollit aute velit. Et labore commodo nulla
-                    aliqua proident mollit ullamco exercitation tempor. Sint
-                    aliqua anim nulla sunt mollit id pariatur in voluptate
-                    cillum. Eu voluptate tempor esse minim amet fugiat veniam
-                    occaecat aliqua.
+                    Syslogic began operations in 2012 as an IT consulting and
+                    outsourcing maintenance company. Our core business includes
+                    IT services and infrastructure solutions such as IT helpdesk
+                    and maintenance, networking, security, email, and IT
+                    relocation services.
+                    <br />
+                     At Syslogic, we aim to be your one-stop
+                    solution provider for all IT-related services. Our
+                    reputation is built on our core values of quality service
+                    and competitive pricing. With a team of well-trained staff,
+                    we provide value-added and efficient services to all our
+                    customers.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
