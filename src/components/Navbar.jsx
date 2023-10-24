@@ -1,16 +1,15 @@
-import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import React from "react";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Services", href: "#" },
+  { name: "About Us", href: "#" },
+  { name: "Contact Us", href: "#" },
 ];
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -44,6 +43,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
+              onClick={() => props.setCurrent(item.name)}
               className="text-sm font-semibold leading-6 text-black"
             >
               {item.name}
@@ -113,3 +113,7 @@ export default function Navbar() {
     </header>
   );
 }
+
+Navbar.propTypes = {
+  setCurrent: PropTypes.func.isRequired,
+};
