@@ -2,7 +2,7 @@ import React from "react";
 
 const body = () => {
   return (
-    <div className="mx-auto max-w-7xl px-6 pt-12 pb-6 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 sm:pt-14 pb-6 lg:px-8 sm:mt-1">
       <div className="">
         <div className="">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
