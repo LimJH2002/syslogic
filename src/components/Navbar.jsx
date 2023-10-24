@@ -18,11 +18,11 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="./" className="-m-1.5 p-1.5 ml-4">
+          <a href="/" className="-m-1.5 p-1.5 ml-4">
             <span className="sr-only">Syslogic</span>
             <img
               className="h-9 w-auto"
-              src="./syslogic-logo.png"
+              src="../syslogic-logo.png"
               alt="Syslogic Logo"
             />
           </a>
