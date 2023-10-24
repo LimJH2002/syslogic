@@ -1,6 +1,7 @@
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Services", href: "/services" },
@@ -39,13 +40,17 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-16">
           {navigation.map((item) => (
-            <a
+            <NavLink
               key={item.name}
-              href={item.href}
-              className="text-xl font-semibold leading-6 text-black"
+              to={item.href}
+              className={({ isActive }) =>
+                `text-xl font-semibold leading-6 ${
+                  isActive ? "text-orange-700" : "text-black"
+                }`
+              }
             >
               {item.name}
-            </a>
+            </NavLink>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
