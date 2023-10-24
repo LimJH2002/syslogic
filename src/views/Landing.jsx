@@ -26,8 +26,8 @@ export default function Landing() {
             <h1 className="text-4xl font-bold tracking-tight text-orange-500 sm:text-6xl">
               Pioneering Your IT Journey
             </h1>
-            <p className="mt-6 text-lg leading-8 text-orange-100 font-bold">
-              A brand is what a bussiness does <br />
+            <p className="mt-6 text-xl leading-8 text-orange-100 font-bold">
+              A brand is what a bussiness does, <br />
               Reputation is what people remember.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
