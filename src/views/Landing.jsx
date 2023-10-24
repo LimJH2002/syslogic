@@ -7,7 +7,7 @@ export default function Landing() {
         <img
           src="./datacenter.jpg"
           alt="datacenter background"
-          className="absolute inset-0 -z-10 h-full w-full object-cover blur-sm"
+          className="absolute inset-0 -z-10 h-full w-full object-cover blur-md"
         />
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -23,10 +23,10 @@ export default function Landing() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-orange-500 sm:text-6xl">
               Pioneering Your IT Journey
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <p className="mt-6 text-lg leading-8 text-orange-100 font-bold">
               A brand is what a bussiness does <br />
               Reputation is what people remember.
             </p>
