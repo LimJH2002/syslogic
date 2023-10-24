@@ -5,8 +5,8 @@ const FeatureSectionRight = ({ items }) => {
   return (
     <div className="overflow-hidden bg-white pb-5">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex items-center mx-auto max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-8 lg:pt-4">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 items-center mx-auto max-w-2xl gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none">
+          <div className="text-center lg:text-left lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 {items.title}
@@ -33,11 +33,13 @@ const FeatureSectionRight = ({ items }) => {
               </dl>
             </div>
           </div>
-          <img
-            src={items.image}
-            alt="Product screenshot"
-            className="w-[25rem] rounded-xl sm:w-[30rem] ml-32 mt-5"
-          />
+          <div className="flex items-start justify-center mt-6 lg:mt-0">
+            <img
+              src={items.image}
+              alt="Product screenshot"
+              className="w-[25rem] rounded-xl sm:w-[30rem] lg:ml-32"
+            />
+          </div>
         </div>
       </div>
     </div>
