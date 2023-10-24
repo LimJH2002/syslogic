@@ -1,12 +1,17 @@
 import {
+  EnvelopeOpenIcon,
+  FireIcon,
   GlobeAltIcon,
   ServerIcon,
+  ShieldCheckIcon,
   WrenchIcon,
 } from "@heroicons/react/20/solid";
 import React from "react";
 import FeatureSectionLeft from "../components/Services/FeatureSectionLeft";
 import FeatureSectionRight from "../components/Services/FeatureSectionRight";
-import ItInfraSupport from "../images/services/IT Infrastructure Support.png";
+import Firewall from "../images/services/Firewall.png";
+import ItInfraSupport from "../images/services/IT.png";
+import Virtualization from "../images/services/Virtualization.png";
 
 export default function Services() {
   const first = {
@@ -23,20 +28,55 @@ export default function Services() {
       },
       {
         name: "Servers",
-        description: ["Server Deployment"],
+        description: "Server Deployment",
         icon: ServerIcon,
       },
       {
         name: "Network Solutions",
-        description: [
-          "Link Balancer, Wireless Access Point",
-        ],
+        description: "Link Balancer, Wireless Access Point",
         icon: GlobeAltIcon,
       },
     ],
   };
   const second = {
-    title: "IT Infrastructure Support",
+    title: "FireWall / Security / AntiSpam",
+    description:
+      "We assist in implementing and managing top-tier FireWall, Security, and AntiSpam solutions, ensuring your business remains protected against cyber threats and disruptions.",
+    image: Firewall,
+    services: [
+      {
+        name: "Enterprise Firewalls",
+        description: "Fortigate, Palo Alto, Juniper",
+        icon: FireIcon,
+      },
+      {
+        name: "Unified Threat Management (UTM)",
+        description: "WatchGuard, Sophos",
+        icon: ShieldCheckIcon,
+      },
+      {
+        name: "Security & Spam Protection",
+        description: "Barracuda",
+        icon: EnvelopeOpenIcon,
+      },
+    ],
+  };
+  const third = {
+    title: "Virtualization",
+    description:
+      "Utilizing industry-leading tools, we help streamline your infrastructure, ensuring better resource management, scalability, and cost savings. Elevate your operations into a seamless virtual environment now!",
+    image: Virtualization,
+    services: [
+      {
+        name: "Hypervisor-based Virtualization",
+        description:
+          "Hyper-V (by Microsoft), VMWARE (by VMware, Inc.)",
+        icon: WrenchIcon,
+      },
+    ],
+  };
+  const fourth = {
+    title: "Virtualization",
     description:
       "From diagnosing server and network issues to deploying essential hardware, we maintain and optimize your business's digital backbone.",
     image: ItInfraSupport,
@@ -59,8 +99,8 @@ export default function Services() {
       },
     ],
   };
-  const third = {
-    title: "IT Infrastructure Support",
+  const fifth = {
+    title: "Virtualization",
     description:
       "From diagnosing server and network issues to deploying essential hardware, we maintain and optimize your business's digital backbone.",
     image: ItInfraSupport,
@@ -90,6 +130,8 @@ export default function Services() {
       </div>
       <FeatureSectionLeft items={second} />
       <FeatureSectionRight items={third} />
+      <FeatureSectionLeft items={fourth} />
+      <FeatureSectionRight items={fifth} />
     </div>
   );
 }
