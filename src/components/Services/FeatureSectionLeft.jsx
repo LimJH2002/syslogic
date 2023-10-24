@@ -5,15 +5,15 @@ const FeatureSectionLeft = ({ items }) => {
   return (
     <div className="overflow-hidden bg-white pb-5">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex items-center mx-auto max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="flex items-start justify-end lg:order-first">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 items-center mx-auto max-w-2xl gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none">
+          <div className="flex items-start justify-center lg:justify-end mt-6 lg:mt-0">
             <img
               src={items.image}
               alt="Product screenshot"
-              className="w-[25rem] rounded-xl sm:w-[30rem] mr-20 mt-2"
+              className="w-[25rem] rounded-xl sm:w-[30rem] lg:mr-20"
             />
           </div>
-          <div className="lg:ml-auto lg:pl-4 lg:pt-4">
+          <div className="text-center lg:text-left lg:ml-auto lg:pl-4 lg:pt-4">
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 {items.title}
