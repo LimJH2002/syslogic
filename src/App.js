@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Hero from "./views/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
