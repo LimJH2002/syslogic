@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import AboutUs from "./views/AboutUs";
 import Contact from "./views/Contact";
-import Hero from "./views/Hero";
+import Hero from "./views/Landing";
 import Services from "./views/Services";
 
 function AppRouter() {
