@@ -3,7 +3,7 @@ import React from "react";
 const Location = () => {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight my-4">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl p-3">
         Where Are We
       </h2>
       <iframe

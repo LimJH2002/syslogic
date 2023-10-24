@@ -5,7 +5,7 @@ const body = () => {
     <div className="mx-auto max-w-7xl px-6 pt-12 pb-6 lg:px-8">
       <div className="">
         <div className="">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Operating Hours
           </h2>
           <div className="mt-4">
