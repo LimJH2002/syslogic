@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 
 const navigation = [
-  { name: "Services", href: "#" },
-  { name: "About Us", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "Services", href: "./services" },
+  { name: "About Us", href: "./about" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar(props) {

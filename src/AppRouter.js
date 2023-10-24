@@ -11,9 +11,9 @@ function AppRouter() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="Services" element={<Services />} />
-        <Route path="Contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
