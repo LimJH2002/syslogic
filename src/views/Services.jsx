@@ -19,6 +19,7 @@ import ItInfraSupport from "../images/services/IT.png";
 import Virtualization from "../images/services/Virtualization.png";
 import Wifi from "../images/services/Wifi.png";
 import Email from "../images/services/Email.png";
+import Footer from "../components/Footer";
 
 export default function Services() {
   const first = {
@@ -127,6 +128,7 @@ export default function Services() {
       <FeatureSectionRight items={third} />
       <FeatureSectionLeft items={fourth} />
       <FeatureSectionRight items={fifth} />
+      <Footer />
     </div>
   );
 }
