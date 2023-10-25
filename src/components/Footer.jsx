@@ -86,41 +86,39 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl pb-8 pt-6 border-t border-gray-900/10">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-1 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Address
-                </h3>
-                <div className="mt-6 text-gray-600">
-                  7 Pemimpin Dr, Singapore 576150
-                </div>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
-                  Email
-                </h3>
-                <div className="mt-6">
-                  <a
-                    href="mailto:contactus@syslogic.com.sg"
-                    className="text-gray-600 hover:text-orange-700"
-                  >
-                    contactus@syslogic.com.sg
-                  </a>
-                </div>
-              </div>
+      <div className="mx-auto max-w-7xl pb-4 pt-4 sm:pb-6 sm:pt-6 md:pb-8 md:pt-8 border-t border-gray-900/10">
+        <div className="flex flex-col space-y-6 sm:space-y-8 md:space-y-0 md:flex-row md:space-x-6 lg:space-x-10">
+          <div className="md:w-1/3">
+            <h3 className="text-sm font-semibold text-gray-900 sm:text-base">
+              Address
+            </h3>
+            <div className="mt-4 text-gray-600">
+              7 Pemimpin Dr, Singapore 576150
             </div>
           </div>
-          <div className="mt-10 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-900 sm:text-left">
+
+          <div className="md:w-1/3">
+            <h3 className="text-sm font-semibold text-gray-900 sm:text-base">
+              Email
+            </h3>
+            <div className="mt-4">
+              <a
+                href="mailto:contactus@syslogic.com.sg"
+                className="text-gray-600 hover:text-orange-700"
+              >
+                contactus@syslogic.com.sg
+              </a>
+            </div>
+          </div>
+
+          <div className="md:w-1/3">
+            <h3 className="text-sm font-semibold text-gray-900 sm:text-base">
               Subscribe to our newsletter
             </h3>
-            <p className="mt-2 text-sm text-gray-600 sm:text-left">
+            <p className="mt-2 text-sm text-gray-600 sm:text-base">
               Get monthly updates and free resources.
             </p>
-            <form className="mt-6 sm:flex sm:max-w-md">
+            <form className="mt-6 sm:flex sm:max-w-md mx-4 md:mx-0">
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
@@ -130,7 +128,7 @@ export default function Footer() {
                 id="email-address"
                 autoComplete="email"
                 required
-                className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-600 sm:w-0 sm:flex-grow sm:text-sm sm:leading-6"
                 placeholder="Enter your email"
               />
               <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
@@ -144,6 +142,7 @@ export default function Footer() {
             </form>
           </div>
         </div>
+
         <div className="mt-4 md:flex md:items-center md:justify-between mx-3">
           {/* <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
